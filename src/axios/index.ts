@@ -37,7 +37,7 @@ export default function axiosInstall(vue: App) {
 }
 
 export function useAxios(): AxiosInstance {
-  return inject<AxiosInstance>(axiosName)!; // ! 表示一定會有
+  return inject<AxiosInstance>(axiosName)!;
 }
 
 export function useRequest<D = any, Res = any>(

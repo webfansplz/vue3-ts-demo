@@ -68,6 +68,20 @@ export default defineComponent({
     }
     // 使用自定義hooks
     const { x, y } = useMousePosition();
+
+    interface Person {
+      info?: PersonInfo;
+    }
+    interface PersonInfo {
+      age?: number;
+      weight?: number;
+    }
+    // const person: Person = {};
+    // if(person.info&&person.info.age)
+    // console.log(person.info?.age);
+    // console.log(null ?? "hello");
+    // console.log(0 ?? "hello");
+    // console.log(0 || "hello");
     return {
       data,
       computedCount,
